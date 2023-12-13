@@ -1,0 +1,53 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./
+    strategy:
+      matrix:
+        node-version: [16.13.0]
+
+    steps:
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/checkout@v4
+
+    - name: Environment Preparation
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Dependencies Installation
+      working-directory: ./
+      run: |
+        npm install
+
+    - name: Create env parameters
+      working-directory: ./
+      run: |
+        touch .env
+        echo BLOCKCHAIN_CONNECTION_STRING=${{ secrets.BLOCKCHAIN_CONNECTION_STRING }} >> .env
+
+    - name: Build JSONs
+      working-directory: ./
+      run: |
+        npm run start
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        author_name: King Julian
+        author_email: dfohubsucks@protonmail.com
+        message: "Build JSONs"
+        add: "./src/output/output.json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.COMMIT_AUTH_TOKEN }}
