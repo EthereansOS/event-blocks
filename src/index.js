@@ -45,7 +45,7 @@ async function main() {
     await items()
     await l2Bridge()
     await fof()
-    data.blocks = data.blocks.filter((it, i, arr) => arr.indexOf(it) === i).sort()
+    data.blocks = data.blocks.filter((it, i, arr) => arr.indexOf(it) === i).sort((a, b) => a - b)
 
     if(data.blocks.length != 0) {
         var fromBlock = Math.min(...data.blocks)
