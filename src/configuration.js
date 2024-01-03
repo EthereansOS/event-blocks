@@ -2,7 +2,12 @@ module.exports = {
     1 : {
         factoryOfFactoriesAddress : "0xf68db1F9A5B224f6687FC56e74a224DcB6913221",
         deploySearchStart : 13715268,
-        itemMainInterfaceAddress : "0x8d53aFBEB62C18917B5F71385d52E8ba87669794"
+        itemMainInterfaceAddress : "0x8d53aFBEB62C18917B5F71385d52E8ba87669794",
+        eRC20WrapperAddress : "0xa4592324d22e960dF199f6Eec1497fAE1f806e31",
+        eRC721WrapperAddress : "0xCD221D6365b3465407ca9770211bfdEb0DEf8Fed",
+        eRC1155WrapperAddress : "0xdE4DAF2d947A8069d6c47bD1157fd2529F0De746",
+        eRC721WrapperDeckAddress : "0xA2052212075483D80cF268905203edC89A75bB29",
+        eRC1155WrapperDeckAddress : "0xB447eB30Dcc3E21c74F3F42Cb78F6553A64A9c52",
     },
     10 : {
         factoryOfFactoriesAddress : "0x241c5FAd7e3Dc73a0c8303F37a3Ecf43f9f4e1E9",
