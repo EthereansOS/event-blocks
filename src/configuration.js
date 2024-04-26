@@ -22,7 +22,7 @@ module.exports = {
     },
     8453 : {
         factoryOfFactoriesAddress : "0x39877710b5B66CD9A20E3b87ac78A2ee8485bCDc",
-        deploySearchStart : 13661474,
+        deploySearchStart : 13661376,
         itemMainInterfaceAddress : "0x9EDA8E3992daa8ba17741C5783C5D496236a759A",
         eRC20WrapperAddress : "0x5E58B81513B4d09b9aC6f7C7789aecd4fb6a200A",
         eRC721WrapperAddress : "0xfbd688104fc785532422D9cA745B223162fb4931",
