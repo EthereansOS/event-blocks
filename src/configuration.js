@@ -19,5 +19,16 @@ module.exports = {
         eRC721WrapperDeckAddress : "0x18aFd644BA51b4D112A18D6baf0a745D92Ee3207",
         eRC1155WrapperDeckAddress : "0x506cC9dEA8aA4361012da9A940a16E2F4AdB8a30",
         L2StandardTokenFactoryAddress : "0x4200000000000000000000000000000000000012"
+    },
+    8453 : {
+        factoryOfFactoriesAddress : "0x39877710b5B66CD9A20E3b87ac78A2ee8485bCDc",
+        deploySearchStart : 13661474,
+        itemMainInterfaceAddress : "0x9EDA8E3992daa8ba17741C5783C5D496236a759A",
+        eRC20WrapperAddress : "0x5E58B81513B4d09b9aC6f7C7789aecd4fb6a200A",
+        eRC721WrapperAddress : "0xfbd688104fc785532422D9cA745B223162fb4931",
+        eRC1155WrapperAddress : "0xbB07Cff77bD58319FE7BA1708Cb11fC2768eA538",
+        eRC721WrapperDeckAddress : "0x952014D0E9e8360ae90192081BD77D7a0B2cAA6B",
+        eRC1155WrapperDeckAddress : "0xC25A841175886Bc8a8294d4e67d6cbA856a1a77A",
+        L2StandardTokenFactoryAddress : "0x4200000000000000000000000000000000000012"
     }
 }
