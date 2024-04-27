@@ -2483,10 +2483,12 @@
             19741571,
             19741706,
             19741761,
-            19742632
+            19742632,
+            19742718,
+            19742719
         ],
-        "toBlock": 19742632,
-        "lastSearchedBlock": 19742672
+        "toBlock": 19742719,
+        "lastSearchedBlock": 19743001
     },
     "10": {
         "fromBlock": 13968799,
@@ -2702,7 +2704,7 @@
             119085124
         ],
         "toBlock": 119085124,
-        "lastSearchedBlock": 119286908
+        "lastSearchedBlock": 119288889
     },
     "8453": {
         "fromBlock": 13661376,
@@ -2731,6 +2733,6 @@
             13679752
         ],
         "toBlock": 13679752,
-        "lastSearchedBlock": 13691624
+        "lastSearchedBlock": 13693605
     }
 }
