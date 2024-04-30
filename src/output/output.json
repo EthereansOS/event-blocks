@@ -2539,10 +2539,14 @@
             19766480,
             19767370,
             19767399,
-            19767878
+            19767878,
+            19768667,
+            19768852,
+            19768854,
+            19768863
         ],
-        "toBlock": 19767878,
-        "lastSearchedBlock": 19768594
+        "toBlock": 19768863,
+        "lastSearchedBlock": 19768891
     },
     "10": {
         "fromBlock": 13968799,
@@ -2758,7 +2762,7 @@
             119085124
         ],
         "toBlock": 119085124,
-        "lastSearchedBlock": 119443494
+        "lastSearchedBlock": 119445286
     },
     "8453": {
         "fromBlock": 13661376,
@@ -2788,6 +2792,6 @@
             13777373
         ],
         "toBlock": 13777373,
-        "lastSearchedBlock": 13848217
+        "lastSearchedBlock": 13850002
     }
 }
