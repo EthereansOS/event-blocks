@@ -1,7 +1,7 @@
 module.exports = {
     1 : {
         factoryOfFactoriesAddress : "0xf68db1F9A5B224f6687FC56e74a224DcB6913221",
-        deploySearchStart : 13715268,
+        deploySearchStart : 13505827,
         itemMainInterfaceAddress : "0x8d53aFBEB62C18917B5F71385d52E8ba87669794",
         eRC20WrapperAddress : "0xa4592324d22e960dF199f6Eec1497fAE1f806e31",
         eRC721WrapperAddress : "0xCD221D6365b3465407ca9770211bfdEb0DEf8Fed",
