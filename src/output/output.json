@@ -8080,10 +8080,12 @@
             20190649,
             20190650,
             20190792,
-            20190893
+            20190893,
+            20191685,
+            20191694
         ],
-        "toBlock": 20190893,
-        "lastSearchedBlock": 20191549
+        "toBlock": 20191694,
+        "lastSearchedBlock": 20191848
     },
     "10": {
         "fromBlock": 13968799,
@@ -8273,7 +8275,7 @@
             121723754
         ],
         "toBlock": 121723754,
-        "lastSearchedBlock": 121997700
+        "lastSearchedBlock": 121999499
     },
     "8453": {
         "fromBlock": 13661376,
@@ -8355,6 +8357,6 @@
             15932149
         ],
         "toBlock": 15932149,
-        "lastSearchedBlock": 16402415
+        "lastSearchedBlock": 16404215
     }
 }
