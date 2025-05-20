@@ -238,6 +238,29 @@ async function getRawField(web3, to, fieldName) {
     return response
 }
 
+async function getLogsRaw(web3, args) {
+    try {
+        return await web3.eth.getPastLogs(args)
+    } catch (e) {
+        var message = (e.stack || e.message || e).toLowerCase()
+        if (message.indexOf('response has no error') !== -1) {
+            return []
+        }
+        message = (e.message || e).toLowerCase()
+        message = message.split('[')
+        if(message.length === 1) {
+          console.log(e)
+          return []
+        } else {
+          message = message[1].split(",").map(it => it.split(',').join("").split("]").join("").split(" ").join(""))
+          return [
+            ...(await getLogsRaw({...args, toBlock : message[1]})),
+            ...(await getLogsRaw({...args, fromBlock : message[1]}))
+          ]
+        }      
+    }
+}
+
 async function getLogs(web3, args) {
     args.toBlock = args.toBlock || 'latest'
 
@@ -269,15 +292,7 @@ async function getLogs(web3, args) {
                         fromBlock: web3Utils.toHex(start),
                         toBlock: web3Utils.toHex(end),
                     }
-                    try {
-                        return await web3.eth.getPastLogs(newArgs)
-                    } catch (e) {
-                        var message = (e.stack || e.message || e).toLowerCase()
-                        if (message.indexOf('response has no error') !== -1) {
-                            return []
-                        }
-                    }
-                    return []
+                    return await getLogsRaw(web3, newArgs)
                 })()
             )
             if (end === range[1]) {
