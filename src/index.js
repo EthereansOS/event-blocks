@@ -254,8 +254,8 @@ async function getLogsRaw(web3, args) {
         } else {
           message = message[1].split(",").map(it => it.split(',').join("").split("]").join("").split(" ").join(""))
           return [
-            ...(await getLogsRaw({...args, toBlock : message[1]})),
-            ...(await getLogsRaw({...args, fromBlock : message[1]}))
+            ...(await getLogsRaw(web3, {...args, toBlock : message[1]})),
+            ...(await getLogsRaw(web3, {...args, fromBlock : message[1]}))
           ]
         }      
     }
